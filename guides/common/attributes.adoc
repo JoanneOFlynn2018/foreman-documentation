@@ -14,50 +14,31 @@
 :RepoRHEL7ServerAnsible: rhel-7-server-ansible-2.6-rpms
 :context: assembly
 
-ifeval::["{build}" == "foreman"]
-:foreman-installer: foreman-installer
-:foreman-example-com: foreman.example.com
+ifeval::["{build}" == "upstream"]
+:OpenShift: OpenShift
+:OpenShiftShort: OpenShift
 :OVirt: oVirt
 :OVirtShort: oVirt
 :OVirtLegacy: oVirt
 :OVirtLegacyShort: oVirt
 :ovirt-example-com: ovirt.example.com
 :OpenStack: OpenStack
-:ProjectNameXY: Foreman{nbsp}1.22
-:ProjectNameX: Foreman
-:ProjectName: Foreman
-:ProjectXY: Foreman{nbsp}1.22
-:ProjectX: Foreman
-:ProjectServer: Foreman{nbsp}server
-:Project: Foreman
-:SmartProxyServer: Smart{nbsp}Proxy{nbsp}server
-:SmartProxies: Smart{nbsp}Proxies
-:SmartProxy: Smart{nbsp}Proxy
-:smartproxy-example-com: smartproxy.example.com
-:smartproxy_port: 8443
-:Team: Foreman developers
+:Project: Service Assurance Framework
+:ProjectShort: SAF
+:MessageBus: QDR
 endif::[]
 
-ifeval::["{build}" == "satellite"]
-:foreman-installer: satellite-installer
-:foreman-example-com: satellite.example.com
+ifeval::["{build}" == "downstream"]
+:OpenShift: Red Hat OpenShift Container Platform
+:OpenShiftShort: OCP
 :OVirt: Red{nbsp}Hat{nbsp}Virtualization
 :OVirtShort: RHV
 :OVirtLegacy: Red{nbsp}Hat{nbsp}Enterprise{nbsp}Virtualization
 :OVirtLegacyShort: RHEV
 :ovirt-example-com: rhv.example.com
 :OpenStack: Red{nbsp}Hat OpenStack Platform
-:ProjectNameXY: Red{nbsp}Hat Satellite{nbsp}6.4
-:ProjectNameX: Red{nbsp}Hat Satellite{nbsp}6
-:ProjectName: Red{nbsp}Hat Satellite
-:ProjectXY: Satellite{nbsp}6.4
-:ProjectX: Satellite{nbsp}6
-:ProjectServer: Satellite{nbsp}Server
-:Project: Satellite
-:SmartProxyServer: Capsule{nbsp}Server
-:SmartProxies: Capsules
-:SmartProxy: Capsule
-:smartproxy-example-com: capsule.example.com
-:smartproxy_port: 9090
-:Team: Red{nbsp}Hat
+:Project: Service Assurance Framework
+:ProjectShort: SAF
+:MessageBus: AMQP 1.0
+
 endif::[]
